@@ -7,3 +7,4 @@ class Solution {
             c++;
         }
         return right<<=c;
+    }
