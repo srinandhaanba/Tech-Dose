@@ -32,8 +32,8 @@ class Solution {
         int ans=x^y,c=0;
         while(ans!=0)
         {
-            c+=ans%2;
-            ans/=2;
+            c+=ans&1;
+            ans>>=1;
         }
         return c;
     }
