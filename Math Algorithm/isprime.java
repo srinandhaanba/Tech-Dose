@@ -1,13 +1,21 @@
+import java.util.*;
+public class Hello {
 
-class Main{
     public static void main(String[] args) {
-        int n=105;
-        for(int i=2;i<=Math.sqrt(n);i++){
-            if (n%i==0){
-                System.out.println("Not a prime");
-                return;
-            }
-        }
-        System.out.println("It is a prime");
-    }
+		Scanner sc=new Scanner(System.in);
+		int N=sc.nextInt();
+		for(int i=2;i<Math.sqrt(N);i++)
+		{
+		    if(N%i==0)
+		    {
+		        System.out.print("Not Prime");
+		        System.exit(0);
+		    }
+		}
+		if(N==1)
+		System.out.print("Not Prime");
+		else
+		System.out.print("Prime");
+	
+	}
 }
