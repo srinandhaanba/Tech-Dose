@@ -6,15 +6,15 @@ public class Hello {
 		int a=sc.nextInt(),b=sc.nextInt();
 		long res=1;
 		while(b>0)
-        {
-            if(b%2==1)
-            {
-                res*=a;
-            }
-            a*=a;
-            b>>=1;
-        }
-        System.out.print(res);
+         	{
+            		if(b%2==1)
+            		{
+                	res*=a;
+            		}	
+            		a*=a;
+            		b>>=1;
+        	}
+        	System.out.print(res);
 
 	}
 }
